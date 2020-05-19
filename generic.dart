@@ -24,3 +24,12 @@ class Person<T> {
   Person(this.id, this.name);
 }
 
+//Вопрос №1
+//как определить различие между
+//дженериком, который указывает на возвращаемый тип функции
+//и дженереком, который указывает универсальный тип, который используется внутри класса?
+Future<String> get _getLocalPath async {                      
+	final directory = await getApplicationDocumentsDirectory(); 
+	return directory.path;
+}
+  
